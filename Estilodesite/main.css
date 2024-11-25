@@ -1,46 +1,21 @@
 
-/*=== MEDIA QUERY ===*/
-@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500,600,700|Montserrat|Poppins:400,500,600,700");
-body {
-line-height: 1.8;
-font-family: "Montserrat", sans-serif;
--webkit-font-smoothing: antialiased;
-font-size: 16px;
-color: rgba(255, 255, 255, 0.932);
-}
-
-h1, .h1, h2, .h2 {
-font-family: "Barlow Condensed", sans-serif;
-font-weight: 700;
-color: #232323;
-letter-spacing: 0.5px;
-}
-
-h1, .h1 {
-font-size: 48px;
-text-transform: uppercase;
-}
-
-
 .slider {
     background: url("") no-repeat 0% 30%;
     background-size: cover;
     padding: 180px 0px;
-    }
-    .slider h1 {
+  }
+  .slider h1 {
     font-size: 95px;
     line-height: 95px;
-    }
-    .slider span.subhead {
+  }
+  .slider span.subhead {
     color: #fff;
     letter-spacing: 5px;
     border: 2px solid #fff;
     padding: 3px 15px 5px 15px;
     opacity: 0.8;
-    }
-    
-
-
+  }
+  
 /* Frase Inspiradora */
 .frase {
     text-align: center;
@@ -54,8 +29,6 @@ text-transform: uppercase;
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
-    font-size: ;
-    font-family: ;
     color: #0f0f0f;
     background-color: #fff;
 }
@@ -95,23 +68,6 @@ text-transform: uppercase;
     margin: 10px 0;
 }
 
-.btn-enroll {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #0f0f0f;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
-
-.btn-enroll:hover {
-    background-color: #C51537;
-}
 
 /* Responsividade */
 @media (min-width: 768px) {
@@ -138,14 +94,13 @@ text-transform: uppercase;
 
 .avaliacoes {
     text-align: center;
-    padding: 20px;
+    padding: 40px;
     }
     /* Avaliações */
     .container {
     display: flex;
     gap: 20px;
     flex-wrap: nowrap;
-    
     justify-content: space-between;
     }
     .box {
@@ -154,7 +109,8 @@ text-transform: uppercase;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(161, 16, 16, 0.1);
     padding: 20px;
-    width: 300px;
+    width: 600px;
+    height: 300px;
     text-align: center;
     }
     .box h3 {
