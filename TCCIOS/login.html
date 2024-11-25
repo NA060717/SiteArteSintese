@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Cursos</title>
+    <link rel="stylesheet" href="../TCCIOS/Estilodesite/login.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="Digite seu e-mail" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" placeholder="Digite sua senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <div class="buttons">
+            <h2>Cadastre-se em um Curso:</h2>
+            <button onclick="redirectToCourse('fotografia')">Fotografia</button>
+            <button onclick="redirectToCourse('cinema')">Cinema Audiovisual</button>
+            <button onclick="redirectToCourse('design')">Design Gráfico</button>
+        </div>
+    </div>
+    <script src="../TCCIOS/Scripts/login.js"></script>
+</body>
+</html>
