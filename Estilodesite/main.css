@@ -1,26 +1,82 @@
 
+
+/* Fonte e Reset */
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500,600,700|Montserrat|Poppins:400,500,600,700");
+
+body {
+  line-height: 1.8;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h4, h5, h6 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: #232323;
+}
+
+/* Títulos principais */
+h1 {
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+/* Títulos h1 e h2 */
+h1 {
+    color: rgb(245, 99, 75); /* Laranja */
+  }
+  
+  h2 {
+    color: #232323; /* Preto */
+  }
+.text-color {
+    color: rgb(245, 99, 75);
+  }
+.text-black {
+    color: #232323;
+
+  }
+
+.btn-white {
+    color: #232323;
+  }
+/* Template */
 .slider {
     background: url("") no-repeat 0% 30%;
+    background-color: #ddd;
+    background-size: cover;
     padding: 180px 0px;
-  }
-  .slider h1 {
+    text-align: center;
+    color: #fff;
+}
+.slider h1 {
     font-size: 95px;
     line-height: 95px;
-  }
-  .slider span.subhead {
+}
+.slider span.subhead {
     color: #fff;
     letter-spacing: 5px;
     border: 2px solid #fff;
     padding: 3px 15px 5px 15px;
-   
-  }
-  
+}
+
 /* Frase Inspiradora */
 .frase {
     text-align: center;
     margin: 40px 0;
     font-size: 24px;
-
 }
 
 /* Cursos */
@@ -30,6 +86,8 @@
     text-align: center;
     color: #0f0f0f;
     background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .curso h1 {
@@ -67,7 +125,6 @@
     margin: 10px 0;
 }
 
-
 /* Responsividade */
 @media (min-width: 768px) {
     .curso-card {
@@ -80,7 +137,6 @@
         height: auto;
         border-right: 2px solid #FCC9A5;
         border-bottom: none;
-        display: flex;
     }
 
     .curso-card .curso-content {
@@ -89,20 +145,20 @@
     }
 }
 
-
-
+/* Avaliações */
 .avaliacoes {
     text-align: center;
     padding: 40px;
-    }
-    /* Avaliações */
-    .container {
+}
+
+.container {
     display: flex;
     gap: 20px;
     flex-wrap: nowrap;
     justify-content: space-between;
-    }
-    .box {
+}
+
+.box {
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -111,14 +167,63 @@
     width: 600px;
     height: 300px;
     text-align: center;
-    }
-    .box h3 {
+}
+
+.box h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    }
-    .box p {
+}
+
+.box p {
     font-size: 16px;
     color: #5e0909;
-    }
-    
-    
+}
+
+/* Seção Sobre */
+.empresa {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    color: #0f0f0f;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.empresa h1 {
+    font-size: 32px;
+    color: #C51537;
+    margin-bottom: 20px;
+}
+
+.empresa h2 {
+    font-size: 24px;
+    color: #111010;
+    margin-bottom: 15px;
+}
+
+.empresa p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Botões */
+.btn {
+    font-family: "Montserrat", sans-serif;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgb(245, 99, 75) 0%, #fe9418 100%);
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(90deg, #fe9418 0%, rgb(245, 99, 75) 100%);
+    transform: translateY(-2px);
+  }
+  
