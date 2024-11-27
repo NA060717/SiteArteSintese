@@ -58,7 +58,7 @@ header {
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
-    background-color: #0187a7;
+    background-color: #E0700D;;
 }
 
 .login-button button a {
@@ -137,64 +137,51 @@ h1, h2, h3 {
   color: #232323;
 }
 
-/* Títulos principais */
-h1 {
-  font-size: 36px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
 
-h2 {
-  font-size: 28px;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-}
-
-/* Títulos h1 e h2 */
-h1 {
-    color: ; /* Laranja */
-  }
-  
-  h2 {
-    color: #232323; /* Preto */
-  }
 .text-color {
     color: #E0700D;
+    text-align: center;
+    font-size: 100px;
     
   }
 
 .text-color1 {
     color: #000000;
+    text-align: center;
+    font-size: 100px;
 
 }
-    
-.text-uppercase text-white mb-5{
-    text-align: center;
-    color: #0f0f0f;
+   
 
-
-  }
-.btn-white {
-    color: #232323;
-  }
 /* Template */
 .slider {
-    background: url("") no-repeat 0% 30%;
-    background-color: #ddd;
-    background-size: cover;
+    background: url("../js/pexels-steve-1292241.jpg") no-repeat 0% 30%;
+    background-color: #FFFFFF;
     padding: 180px 0px;
-    text-align: center;
-    color: #fff;
+    background-size: 80%;
+
+    
 }
 .slider h1 {
     font-size: 95px;
     line-height: 95px;
+    text-align: center;
+
 }
+.slider h2 {
+    font-size: 70px;
+    text-align: center;
+    color: #E0700D;
+    padding-left: 40px;
+    
+}
+
 .slider span.subhead {
     color: #fff;
     letter-spacing: 5px;
     border: 2px solid #fff;
     padding: 3px 15px 5px 15px;
+    
 }
 
 /* Frase Inspiradora */
@@ -205,6 +192,8 @@ h1 {
 }
 
 /* Cursos */
+
+
 .curso {
     max-width: 900px;
     margin: 0 auto;
@@ -215,6 +204,10 @@ h1 {
     border-radius: 8px;
 }
 
+.matricula {
+    font-size: 20px;
+    color:  #E0700D;;
+}
 .curso h1 {
     color: #111010;
     margin-bottom: 20px;
@@ -264,9 +257,11 @@ h1 {
         border-bottom: none;
     }
 
-    .curso-card .curso-content {
+    .curso-card .course-content {
         flex: 1;
         text-align: left;
+        margin:20px;
+        
     }
 }
 
@@ -307,18 +302,18 @@ h1 {
 /* Seção Sobre */
 .empresa {
     text-align: center;
-    padding: 40px 20px;
+    padding: 60px 40px;
     background-color: #f9f9f9;
     color: #0f0f0f;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 900px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .empresa h1 {
     font-size: 32px;
-    color: #C51537;
+    color:  #E0700D;;
     margin-bottom: 20px;
 }
 
@@ -335,9 +330,12 @@ h1 {
 }
 
 /* Botões */
+
+
 .btn {
     font-family: "Montserrat", sans-serif;
     padding: 10px 20px;
+    padding-left: 30px;
     font-size: 16px;
     text-transform: uppercase;
     border-radius: 5px;
@@ -345,6 +343,7 @@ h1 {
     color: white;
     border: none;
     transition: all 0.3s ease;
+  
   }
   
   .btn:hover {
@@ -377,6 +376,7 @@ h1 {
   footer {
       width: 100%;
       color: var(--color-neutral-40);
+      margin-top: 100px;
   }
   
   .footer-link {
@@ -388,6 +388,10 @@ h1 {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       padding: 3rem 3.5rem;
+    
+  }
+  #footer_content h3 {
+    color: white;
   }
   
   #footer_contacts h1 {
