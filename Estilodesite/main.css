@@ -120,79 +120,69 @@ header {
 /* Fonte e Reset */
 @import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500,600,700|Montserrat|Poppins:400,500,600,700");
 
+
+
 body {
-  line-height: 1.8;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  color: rgba(0, 0, 0, 0.8);
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
+    line-height: 1.8;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+ 
+  h1,
+  h2,
+  h3 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
 
-h1, h2, h3 {
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 700;
-  margin: 0;
-  color: #232323;
-}
-
-
-.text-color {
-    color: #E0700D;
+    margin: 0;
+    color: #232323;
+  }
+ 
+  /* Texto com cores específicas */
+  .text-color {
+    color: #e0700d;
+    font-size: 80px;
+  }
+ 
+  .text-color1 {
+    color: #000;
+    font-size: 80px;
+  }
+ 
+  .text-color2 {
+    color: #e0700d;
+    font-size: 50px;
+    font-weight: normal;
+  }
+ 
+  /* Configuração do Slider */
+  .slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    font-size: 100px;
-    
+    background: url("../img/banner-arte.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 200px 20px;
+    position: relative;
   }
 
-.text-color1 {
-    color: #000000;
-    text-align: center;
-    font-size: 100px;
 
-}
-   
 
-/* Template */
-.slider {
-    background: url("../js/pexels-steve-1292241.jpg") no-repeat 0% 30%;
-    background-color: #FFFFFF;
-    padding: 180px 0px;
-    background-size: 80%;
 
-    
-}
-.slider h1 {
-    font-size: 95px;
-    line-height: 95px;
-    text-align: center;
-
-}
-.slider h2 {
-    font-size: 70px;
-    text-align: center;
-    color: #E0700D;
-    padding-left: 40px;
-    
-}
-
-.slider span.subhead {
-    color: #fff;
-    letter-spacing: 5px;
-    border: 2px solid #fff;
-    padding: 3px 15px 5px 15px;
-    
-}
 
 /* Frase Inspiradora */
 .frase {
     text-align: center;
     margin: 40px 0;
-    font-size: 24px;
 }
 
 /* Cursos */
-
 
 .curso {
     max-width: 900px;
@@ -203,6 +193,8 @@ h1, h2, h3 {
     padding: 20px;
     border-radius: 8px;
 }
+
+
 
 .matricula {
     font-size: 20px;
@@ -332,24 +324,29 @@ h1, h2, h3 {
 /* Botões */
 
 
-.btn {
-    font-family: "Montserrat", sans-serif;
-    padding: 10px 20px;
-    padding-left: 30px;
-    font-size: 16px;
+/* Botão no canto esquerdo */
+.button-container {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+ 
+  .btn-main {
+    background: #e0700d;
+    color: #fff;
+    padding: 15px 30px;
     text-transform: uppercase;
-    border-radius: 5px;
-    background: linear-gradient(90deg, rgb(245, 99, 75) 0%, #fe9418 100%);
-    color: white;
+    font-size: 18px;
     border: none;
-    transition: all 0.3s ease;
-  
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
   }
-  
-  .btn:hover {
-    background: linear-gradient(90deg, #fe9418 0%, rgb(245, 99, 75) 100%);
-    transform: translateY(-2px);
+ 
+  .btn-main:hover {
+    background: #d65e00;
   }
+ 
   
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
 
