@@ -32,24 +32,32 @@
             <div class="login-button">
                 <button><a href="./html/login.html">Login</a></button>
             </div>
-
             <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+                <button onclick="toggleMenu()"><img class="icon" src="./img/menu_white_36dp.svg" alt="Open menu"></button>
             </div>
         </nav>
-        <div class="mobile-menu">
+    
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="mobile-menu">
             <ul>
-                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="html/cursos.html" class="nav-link">Cursos</a></li>
-                <li class="nav-item"><a href="html/sobre.html" class="nav-link">Nossa história</a></li>
-                <li class="nav-item"><a href="html/contatos.html" class="nav-link">Contatos</a></li>
+                <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#cursos" class="nav-link">Cursos</a></li>
+                <li class="nav-item"><a href="#nossa-historia" class="nav-link">Nossa história</a></li>
+                <li class="nav-item"><a href="./html/contatos.html" class="nav-link">Contatos</a></li>
             </ul>
-
             <div class="login-button">
-                <button><a href="#">Entrar</a></button>
+                <button><a href="./html/login.html">Entrar</a></button>
             </div>
         </div>
     </header>
+    
+    <script>
+    function toggleMenu() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('open');
+    }
+    </script>
+    
 
     <script src="./Scripts/header.js"></script>
 
