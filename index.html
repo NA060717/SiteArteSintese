@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
 
-    <title>Menu Responsivo</title>
+    <title>Arte Síntese</title>
 </head>
 
 <body>
@@ -23,8 +24,8 @@
             <div class="nav-list">
                 <ul>
                     <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="./html/cursos.html" class="nav-link">Cursos</a></li>
-                    <li class="nav-item"><a href="./html/sobre.html" class="nav-link">Nossa história</a></li>
+                    <li class="nav-item"><a href="#cursos" class="nav-link">Cursos</a></li>
+                    <li class="nav-item"><a href="#nossa-historia" class="nav-link">Nossa história</a></li>
                     <li class="nav-item"><a href="./html/contatos.html" class="nav-link">Contatos</a></li>
                 </ul>
             </div>
@@ -39,8 +40,8 @@
         <div class="mobile-menu">
             <ul>
                 <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Cursos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Nossa história</a></li>
+                <li class="nav-item"><a href="#cursos" class="nav-link">Cursos</a></li>
+                <li class="nav-item"><a href="#nossa-historia" class="nav-link">Nossa história</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Contatos</a></li>
             </ul>
 
@@ -54,33 +55,73 @@
 
     <!-- Slider -->
 
-    <section class="slider">
-        <div class="container">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-12 text-center">
-              <h1 class="text-uppercase">
-                <span class="text-color">Formação</span>
-                <span class="text-color1">e Capacitação</span>
-              </h1>
-              <h2 class="text-color2">
-                Em Fotografia, Design Gráfico e Cinema Audiovisual
-              </h2>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <img src="./img/prédio.jpg" alt="Formação e Capacitação">
+                <div class="overlay">
+                    <div class="overlay-container"></div>
+                    <h1 class="text-uppercase">
+                        <span class="text-color">Formação</span>
+                        <span class="text-color1">e Capacitação</span>
+                    </h1>
+                    <h2 class="text-color2">Em Fotografia, Design Gráfico e Cinema e Audiovisual</h2>
+                    <a href="./html/cadastro.html" target="_blank" class="btn btn-main">Matricule-se</a>
+                </div>
             </div>
-            <div class="button-container">
-              <a href="./html/cadastro.html" target="_blank" class="btn btn-main">Cadastre-se</a>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <img src="./img/design.jpg" alt="Designer Gráfico">
+                <div class="overlay">
+                    <h1 class="text-uppercase">
+                        <span class="text-color">Formação</span>
+                        <span class="text-color1">e Capacitação</span>
+                    </h1>
+                    <h2 class="text-color2">Design Gráfico</h2>
+                    <a href="./html/cadastro.html" target="_blank" class="btn btn-main">Matricule-se </a>
+                </div>
             </div>
-          </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <img src="./img/fotografia 3.jpg" alt="Fotografia">
+                <div class="overlay">
+                    <h1 class="text-uppercase">
+                        <span class="text-color">Formação</span>
+                        <span class="text-color1">e Capacitação</span>
+                    </h1>
+                    <h2 class="text-color2">Fotografia</h2>
+                    <a href="./html/cadastro.html" target="_blank" class="btn btn-main">Matricule-se</a>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+                <img src="./img/cinema 1.jpg" alt="Cinema Audiovisual">
+                <div class="overlay">
+                    <h1 class="text-uppercase">
+                        <span class="text-color">Formação</span>
+                        <span class="text-color1">e Capacitação</span>
+                    </h1>
+                    <h2 class="text-color2">Cinema e Audiovisual</h2>
+                    <a href="./html/cadastro.html" target="_blank" class="btn btn-main">Matricule-se</a>
+                </div>
+            </div>
         </div>
-      </section>
-    
+    </div>
+
+
 
     <!-- Frase Inspiradora -->
     <section class="frase">
-        <p>"Transformando sonhos em realidade através da educação de qualidade."</p>
+        <p>"Transformando sonhos em realidade através da educação de qualidade!"</p>
     </section>
 
     <!-- Cursos -->
-    <section class="curso">
+
+    <section id="cursos" class="curso">
         <h1>Nossos Cursos</h1>
         <p>Explore os cursos profissionalizantes da Arte Síntese, criados para transformar sua paixão em profissão.</p>
 
@@ -90,7 +131,7 @@
                 <p>Aprenda os fundamentos do design gráfico, princípios de cores, tipografia e composição para criar
                     projetos impactantes.</p>
                 <p><strong>Carga horária:</strong> 300 horas</p>
-                <a href="./html/cadastro.html" class="matricula">Matricule-se</a>
+                <a href="./html/Design gráfico.html" class="matricula">Matricule-se</a>
             </div>
         </div>
 
@@ -100,7 +141,7 @@
                 <p>Desenvolva suas habilidades na fotografia, incluindo técnicas de iluminação, composição e edição de
                     imagens.</p>
                 <p><strong>Carga horária:</strong> 300 horas</p>
-                <a href="./html/cadastro.html" class="matricula">Matricule-se</a>
+                <a href="./html/fotografia.html" class="matricula">Matricule-se</a>
             </div>
         </div>
 
@@ -110,7 +151,7 @@
                 <p>Descubra o mundo do audiovisual com aulas sobre roteirização, captação de imagens e edição de vídeos.
                 </p>
                 <p><strong>Carga horária:</strong> 300 horas</p>
-                <a href="./html/cadastro.html" class="matricula">Matricule-se</a>
+                <a href="./html/Cinema e Audiovisual.html" class="matricula">Matricule-se</a>
             </div>
         </div>
     </section>
@@ -134,13 +175,12 @@
         </div>
     </section>
 
-    <!-- Sobre a Empresa -->
-    <section class="empresa">
-        <h1>Arte Síntese</h1>
-        <h2>Sobre a escola Arte Síntese</h2>
-        <p>A Escola Arte Síntese é uma plataforma online inovadora focada em oferecer cursos nas áreas de fotografia,
-            design e audiovisual, voltados para pessoas que desejam explorar e se capacitar no universo das artes.</p>
-    </section>
+    <!-- Nossa História -->
+<section id="nossa-historia" class="empresa">
+    <h1>Arte Síntese</h1>
+    <h2>Nossa História</h2>
+    <p>A Escola Arte Síntese é uma plataforma online inovadora, dedicada a oferecer cursos especializados nas áreas de Fotografia, Design Gráfico e Cinema Audiovisual. Nosso objetivo é proporcionar uma experiência de aprendizado única para pessoas que desejam se aprofundar e se profissionalizar no fascinante universo das artes, com conteúdos pensados para estimular a criatividade, aprimorar habilidades técnicas e expandir horizontes no mundo visual.</p>
+</section>
 
 
     <footer>
@@ -221,6 +261,10 @@
             <!--  mudar ainda, colocar oq eu tenho no note do curso  -->
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
 
 </body>
 

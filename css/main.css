@@ -8,6 +8,10 @@
   
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     flex: 1;
 }
@@ -118,72 +122,152 @@ header {
 
 
 /* Fonte e Reset */
-@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500,600,700|Montserrat|Poppins:400,500,600,700");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
 
-
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif; 
+  box-sizing: border-box;
+}
 
 body {
-    line-height: 1.8;
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    color: rgba(0, 0, 0, 0.8);
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
- 
-  h1,
-  h2,
-  h3 {
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 700;
+  line-height: 1.8;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
+}
 
-    margin: 0;
-    color: #232323;
-  }
- 
-  /* Texto com cores específicas */
-  .text-color {
-    color: #e0700d;
-    font-size: 80px;
-  }
- 
-  .text-color1 {
-    color: #000;
-    font-size: 80px;
-  }
- 
-  .text-color2 {
-    color: #e0700d;
-    font-size: 50px;
-    font-weight: normal;
-  }
- 
-  /* Configuração do Slider */
-  .slider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    background: url("../img/banner-arte.jpg") no-repeat center center;
-    background-size: cover;
-    padding: 200px 20px;
-    position: relative;
-  }
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  margin: 0;
+  color: #232323;
+}
+
+/* Estilização dos textos no overlay */
+.text-color {
+  color: #e0700d;
+}
+
+.text-color1 {
+  color: white;
+}
+
+.text-color2 {
+  color: #e0700d;
+  font-size: 40px;
+  font-weight: 400; 
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+}
+
+/* Swiper e Overlay */
+.swiper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 20px;
+  z-index: 1; 
+}
+
+/* Título e subtítulo */
+.overlay h1 {
+  font-size: 70px; 
+  margin-bottom: 10px;
+}
+
+.overlay h2 {
+  font-size: 40px; 
+  margin-top: 20px;
+}
+
+/* Contêiner para o botão e o texto */
+.overlay-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 10;
+}
 
 
 
+/* --- Responsividade --- */
 
+/* Para telas pequenas (mobile) */
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 40px; 
+  }
+
+  .overlay h2 {
+    font-size: 20px; 
+  }
+
+  .btn-main {
+    margin-top: 15px; 
+    font-size: 0.9rem; 
+    z-index: 20; 
+  }
+}
+
+/* Para telas grandes (desktop) */
+@media (min-width: 769px) {
+  .overlay h1 {
+    font-size: 70px; 
+  }
+
+  .overlay h2 {
+    font-size: 40px; 
+  }
+
+  .btn-main {
+    font-size: 1rem; 
+  }
+}
 
 /* Frase Inspiradora */
 .frase {
     text-align: center;
     margin: 40px 0;
+    font-size: 35px;
 }
 
 /* Cursos */
+.curso h1{
+    font-size: 30px;
 
+}
+
+.curso p {
+    font-size: 20px;
+
+}
 .curso {
     max-width: 900px;
     margin: 0 auto;
@@ -194,12 +278,39 @@ body {
     border-radius: 8px;
 }
 
+.curso-card:hover {
+    box-shadow: 0 4px 10px rgba(194, 21, 55, 0.3); 
+    transform: scale(1.05); 
+}
+
+
+.curso-card:active {
+    box-shadow: 0 4px 10px rgba(194, 21, 55, 0.4); 
+    transform: scale(0.98); 
+}
 
 
 .matricula {
     font-size: 20px;
-    color:  #E0700D;;
+    color:  #E0700D;
+    background-color: #E0700D
+    display: inline-block; 
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
 }
+.matricula:hover {
+    box-shadow: 0 4px 10px rgba(194, 21, 55, 0.3);
+    transform: scale(1.05); 
+    background-color: white;
+}
+
+.matricula:active {
+    box-shadow: 0 4px 10px rgba(194, 21, 55, 0.4); 
+    transform: scale(0.98); 
+    background-color: #9E0B2A; 
+}
+
 .curso h1 {
     color: #111010;
     margin-bottom: 20px;
@@ -209,7 +320,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #ffffffea;
-    border: 2px solid #FCC9A5;
+    border: 2px solid #cfac92;
     border-radius: 8px;
     margin: 20px 0;
     overflow: hidden;
@@ -258,9 +369,10 @@ body {
 }
 
 /* Avaliações */
-.avaliacoes {
+.avaliacoes h2 {
     text-align: center;
     padding: 40px;
+    margin-bottom: 10px;
 }
 
 .container {
@@ -276,20 +388,73 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(161, 16, 16, 0.1);
     padding: 20px;
-    width: 600px;
-    height: 300px;
+    width: 400px;
+    height: 200px;
     text-align: center;
-}
+    transition: box-shadow 0.3s ease, transform 0.3s ease; }
 
 .box h3 {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .box p {
     font-size: 16px;
     color: #5e0909;
 }
+
+
+.box:hover {
+    box-shadow: 0 4px 10px rgba(161, 16, 16, 0.3); 
+    transform: scale(1.05); }
+.box:active {
+    box-shadow: 0 4px 10px rgba(161, 16, 16, 0.4); /    transform: scale(0.98);}
+
+/* Responsividade  avaliações*/
+@media (max-width: 1024px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box {
+        width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .avaliacoes h2 {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .box h3 {
+        font-size: 18px;
+    }
+
+    .box p {
+        font-size: 14px;
+    }
+}
+
 
 /* Seção Sobre */
 .empresa {
@@ -301,11 +466,12 @@ body {
     max-width: 900px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
 }
 
 .empresa h1 {
     font-size: 32px;
-    color:  #E0700D;;
+    color:  #E0700D; #E0700D;
     margin-bottom: 20px;
 }
 
@@ -321,32 +487,85 @@ body {
     color: #333;
 }
 
+
+/* Responsividade sobre  */
+@media (max-width: 1024px) {
+    .empresa {
+        padding: 50px 30px;
+        max-width: 700px;
+    }
+
+    .empresa h1 {
+        font-size: 28px;
+    }
+
+    .empresa h2 {
+        font-size: 22px;
+    }
+
+    .empresa p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .empresa {
+        padding: 40px 20px;
+        max-width: 90%;
+    }
+
+    .empresa h1 {
+        font-size: 24px;
+    }
+
+    .empresa h2 {
+        font-size: 20px;
+    }
+
+    .empresa p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .empresa {
+        padding: 30px 15px;
+    }
+
+    .empresa h1 {
+        font-size: 22px;
+    }
+
+    .empresa h2 {
+        font-size: 18px;
+    }
+
+    .empresa p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+}
 /* Botões */
-
-
-/* Botão no canto esquerdo */
-.button-container {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-  }
- 
-  .btn-main {
-    background: #e0700d;
-    color: #fff;
-    padding: 15px 30px;
-    text-transform: uppercase;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
+.btn-main {
+    margin-top: 20px; 
+    padding: 12px 25px;
+    background-color: #e0700d;
+    color: white;
     text-decoration: none;
-    transition: background 0.3s ease;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: background-color 0.3s;
+    z-index: 20; 
   }
- 
+  
   .btn-main:hover {
-    background: #d65e00;
+    background-color: #c0580a;
   }
- 
+
+
+
+
   
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
 
